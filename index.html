@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My-Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h5>Gaurav-Portfolio</h5>
+        <nav>
+            <div class="left">
+                <img src="/images/myImg.jpg" alt="" id="light-mode-toggle">
+                Gaurav Singh
+            </div>
+            <div class="right">
+                <ul>
+                    <li id="Home">Home</li>
+                    <li id="About">About</li>
+                    <li id="Services">Services</li>
+                    <li id="Projects">Projects</li>
+                    <li id="ContactMe">Contact-Me</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hello, My Name is <span class="purple">Gaurav</span> and i am
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn" id="resume">MyResume</button>
+                    <button class="btn" id="github">Visit GitHub</button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <div id="rightImg">
+
+                </div>
+            </div>
+        </section>
+        <hr>
+        <div class="secondSection">
+            <span class="text-grey">what i have done so far</span>
+            <h1>Work Exp</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="/images/Parle Agro logo.png" alt="">
+                    <div class="vertical-title">
+                        Event Management (2018-2021)
+                        <ul>
+                            <li>Parle Agro</li>
+                        </ul>
+                    </div>
+                    <div class="vertical-desc">
+                        process of planning, organizing and executing the transportation and storage of goods or
+                        materials for events
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="images/bisleri.jpg" alt="">
+                    <div class="vertical-title">
+                        Event Management (2021-2022)
+                        <ul>
+                            <li>Bisleri</li>
+                        </ul>
+                    </div>
+                    <div class="vertical-desc">
+                        process of planning, organizing and executing the transportation and storage of goods or
+                        materials for events
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="/images/SigmaLogo.jpg" alt="">
+                    <div class="vertical-title">
+                        Excutive At Sigma Outsourcing Service pvt ltd (2020-2022)
+                    </div>
+                    <div class="vertical-desc">
+                        <ul>
+                            <li>Recovery Agent-Kotak Bank (6 months)</li>
+                            <li>Personal Loan Executive-Axis Bank (8 months)</li>
+                            <li>Consumer Loan Executive-L&T (8 months)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="/images/Front_end logo.jpg" alt="">
+                    <div class="vertical-title">
+                        front-end Developer(2023-25)
+                    </div>
+                    <div class="vertical-desc">
+                        Still Learning Backend
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+
+        <div class="footer">
+            <!-- <div class="footer-first">
+            </div> -->
+            <div class="footer-second">
+                <h4>Social Media Links</h4>
+                <div class="SocialList">
+                    <img src="images/instagram.png" alt="" id="instagram">
+                    <img src="images/linkedin.png" alt="" id="linkedin">
+                    <img src="images/twitter.png" alt="" id="twitter">
+                    <img src="images/whatsapp.png" alt="" id="whatsapp">
+                    <img src="images/github.png" alt="" id="github">
+                </div>
+            </div>
+
+            <!-- <div class="footer-third">
+                <h4>Other Platforms</h4>
+            </div> -->
+
+            <div class="footer-fourth">
+                <h4>Let's Work Together!</h4>
+                <p>I'm available for freelance and full-time roles. Feel free to reach out.</p>            
+            </div>
+        </div>
+        
+        <section class="newsletter">
+            <h2>Subscribe to My Newsletter</h2>
+            <p>Get updates on my latest projects and blog posts.</p>
+            <form>
+                <input type="email" name="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+
+        <div class="footer-rights">
+            "&#169; 2025 Gaurav Singh. All rights reserved."<br>
+            "Designed & Developed by Gaurav Singh"
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Designer', 'Web Developer.',],
+            typeSpeed: 100,
+        });
+    </script>
+
+</body>
+
+</html>
