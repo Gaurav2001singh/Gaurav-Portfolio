@@ -18,6 +18,39 @@
         :root .contentData:hover{
             color: red;
         }
+
+        .light-mode .MyResume{
+            margin-top: -50px;
+            width: 80%;
+            border-radius: 1px;
+            box-shadow: 5px 5px 5px 5px black;
+        }
+
+        .light-mode .resume-animation{
+            animation: light-slideIn 1s ease-in-out forwards;
+        }
+
+        @keyframes light-slideIn {
+            0% {
+                opacity: 0.2;
+                transform: scale(0.5) rotate(10deg);
+            }
+
+            25% {
+                border: 5px solid black;
+                box-shadow: 25px 25px 25px black;
+            }
+
+            50% {
+                opacity: 0.7;
+                transform: scale(1.5) rotate(5deg);
+            }
+
+            100% {
+                opacity: 1;
+                transform: scale(1) rotate(0deg);
+            }
+        }
         
         .light-mode {
             --bg-color: #ffffff;
