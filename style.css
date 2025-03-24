@@ -14,9 +14,42 @@
             --bg-color: #121212;
             --text-color: #ffffff;
         }
+
+        .light-mode {
+            --bg-color: #ffffff;
+        }
+        .light-mode .contentData{
+            color: black;
+        }
+
+        .light-mode .leftSection{
+            color: black;
+        }
+        .light-mode #element{
+            color: rgb(118, 20, 209);
+        }
+
+        .light-mode .purple{
+            color:rgb(118, 20, 209);
+        }
+
+        .light-mode .secondSection{
+            color: black;
+        }
         
-        :root .contentData:hover{
-            color: red;
+        .light-mode .box{
+            background-color: black !important;
+        }
+        .light-mode .vertical{
+            background-color: black !important;
+        }
+
+        .light-mode .vertical-title{
+            color:  rgb(118, 20, 209);
+        }
+
+        .light-mode .vertical-desc{
+            color:black ;
         }
 
         .light-mode .MyResume{
@@ -51,11 +84,6 @@
                 transform: scale(1) rotate(0deg);
             }
         }
-        
-        .light-mode {
-            --bg-color: #ffffff;
-            --text-color: rgb(118, 20, 209);
-        }
 
         header h5 {
             display: flex;
@@ -81,15 +109,11 @@
             list-style: none;
             margin: 0 23px;
             cursor: pointer;
-        }
-
-        nav ul li a {
-            text-decoration: none;
             color: white;
         }
 
         nav ul li:hover {
-            color: #0c13eb;
+            color: rgb(142, 71, 209);
             font-size: 1.02rem;
         }
 
@@ -104,6 +128,7 @@
             font-size: 1.5rem;
             display: flex;
             align-items: center;
+            color:rgb(132, 72, 188) ;
         }
 
         .left img {
@@ -208,10 +233,6 @@
             bottom: 40px;
         }
 
-        .contentData:hover {
-            color: white;
-        }
-
         #HomeData p {
             font-family: "Bebas Neue";
             display: inline;
@@ -276,12 +297,13 @@
             top: 75px;
             width: 150px;
             font-size: 14px;
+            color:  rgb(154, 119, 186);
         }
 
         .vertical-desc {
             position: relative;
             top: 86px;
-            color: gray;
+            color: white;
             width: 150px;
             font-size: 9px;
         }

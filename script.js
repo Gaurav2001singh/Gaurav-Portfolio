@@ -1,8 +1,11 @@
-const toggleButton = document.getElementById("light-mode-toggle");
+const lightMode = (event) => {
+    if(event.code === "Space"){
+        event.preventDefault();
+        document.body.classList.toggle("light-mode")
+    }
+}
 
-toggleButton.addEventListener("click", () => {
-    document.body.classList.toggle("light-mode");
-});
+const triggerlightMode = document.addEventListener("keydown",lightMode)
 
 
 let buttons = document.querySelectorAll(".buttons .btn");
