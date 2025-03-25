@@ -18,8 +18,24 @@
         .light-mode {
             --bg-color: #ffffff;
         }
+
+        .light-mode .btn{
+            background-color: rgb(187, 17, 17) !important;
+            color: white !important;
+            border: 4px solid black !important;
+        }
+
+        .light-mode .btn:hover{
+            color: white;
+            border: 2px solid white !important;
+        }
+
         .light-mode .contentData{
             color: black;
+        }
+
+        .light-mode .contentData:hover{
+            color:rgb(128, 0, 255) ;
         }
 
         .light-mode .leftSection{
@@ -227,6 +243,10 @@
             color: var(--text-color);
         }
 
+        .contentData:hover{
+            color: rgb(166, 88, 88);
+        }
+
         .contentData h2 {
             color: rebeccapurple;
             position: relative;
@@ -329,23 +349,9 @@
             padding: 12px 0;
         }
 
-
         .footer-second img {
             width: 25px;
             margin: 10px 5px;
-        }
-
-        .footer-second h4 {
-            color: rgb(170, 107, 228);
-        }
-
-        .footer-third img {
-            width: 25px;
-            margin: 10px 0;
-        }
-
-        .footer-third h4 {
-            color: rgb(170, 107, 228);
         }
 
         .footer-fourth h4 {
