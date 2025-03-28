@@ -11,7 +11,8 @@
         }
 
         :root {
-            --bg-color: #121212;
+            background-image: url("https://abdulrafayzahid.github.io/BusinessWebLayout4-Responsive/Images/second.jpg");
+            background-size: contain;
             --text-color: #ffffff;
         }
 
@@ -19,63 +20,81 @@
             --bg-color: #ffffff;
         }
 
-        .light-mode .btn{
+        .light-mode .codeText{
+            color: black;
+        }
+
+        .light-mode code h2{
+            color:  rgb(128, 0, 255);
+        }
+
+        .light-mode .codeText strong{
+            color: rgb(128, 0, 255);
+        }
+
+        .light-mode .btn {
             background-color: rgb(187, 17, 17) !important;
             color: white !important;
             border: 4px solid black !important;
         }
 
-        .light-mode .btn:hover{
+        .light-mode .btn:hover {
             color: white;
             border: 2px solid white !important;
         }
 
-        .light-mode .contentData{
+        .light-mode .contentData {
             color: black;
         }
 
-        .light-mode .contentData:hover{
-            color:rgb(128, 0, 255) ;
+        .light-mode .contentData h2{
+            color: rgb(142, 71, 209);
         }
 
-        .light-mode .leftSection{
+        .light-mode .contentData:hover {
+            color: rgb(128, 0, 255);
+        }
+
+        .light-mode .leftSection {
             color: black;
         }
-        .light-mode #element{
+
+        .light-mode #element {
             color: rgb(118, 20, 209);
         }
 
-        .light-mode .purple{
-            color:rgb(118, 20, 209);
+        .light-mode .purple {
+            color: rgb(118, 20, 209);
         }
 
-        .light-mode .secondSection{
+        .light-mode .secondSection {
             color: black;
         }
-        
-        .light-mode .box{
-            background-color: black !important;
-        }
-        .light-mode .vertical{
+
+        .light-mode .box {
             background-color: black !important;
         }
 
-        .light-mode .vertical-title{
-            color:  rgb(118, 20, 209);
+        .light-mode .vertical {
+            background-color: black !important;
         }
 
-        .light-mode .vertical-desc{
-            color:black ;
+        .light-mode .vertical-title {
+            color: rgb(118, 20, 209);
         }
 
-        .light-mode .MyResume{
+        .light-mode .vertical-desc {
+            color: black;
+        }
+
+        .light-mode .MyResume {
             margin-top: -50px;
             width: 80%;
             border-radius: 1px;
             box-shadow: 5px 5px 5px 5px black;
         }
 
-        .light-mode .resume-animation{
+        .light-mode .resume-animation {
             animation: light-slideIn 1s ease-in-out forwards;
         }
 
@@ -107,10 +126,12 @@
             background-color: rgb(221, 207, 207);
             color: rgb(8, 8, 8);
         }
+
         nav {
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
             align-items: center;
+            gap: 50px;
             height: 80px;
             background-color: rgb(18, 18, 62);
 
@@ -118,7 +139,6 @@
 
         nav ul {
             display: flex;
-            justify-content: center;
         }
 
         nav ul li {
@@ -144,7 +164,7 @@
             font-size: 1.5rem;
             display: flex;
             align-items: center;
-            color:rgb(132, 72, 188) ;
+            color: rgb(132, 72, 188);
         }
 
         .left img {
@@ -201,6 +221,76 @@
             transition: opacity 0.3s ease-out;
         }
 
+        .typing-animation {
+            width: 500px;
+            height: 300px;
+            animation: typing 60s ease-in-out infinite;
+        }
+
+        .typing-animation code {
+            /* margin: 50px 0; */
+            white-space: pre-wrap;
+            font-family: "Courier New", monospace;
+        }
+
+        code h2{
+            position: relative;
+            bottom: 50px;
+            right: 80%;
+            opacity: 0;
+            animation: screenup 1s ease-in forwards;
+        }
+        @keyframes screenup {
+            0%{
+                opacity:1;
+                transform: scale(2.1);
+                color: yellow;
+            }
+            50%{
+                opacity: 1;
+                transform: scale(2);
+                color: red;
+
+            }
+            80%{
+                opacity: 1;
+                transform: scale(1.5);
+                color: white;  
+            }
+            100%{
+                opacity: 1;
+                transform: scale(1);
+                color: yellow;
+            }
+        }
+        
+        .codeText{
+            color: white;
+        }
+
+        .codeText strong{
+            color: red;
+            text-transform: uppercase;
+        }
+
+        /* .coding-animation {
+            background-color: #1e1e1e;
+            color: #00ff99;
+            font-family: "Courier New", monospace;
+            font-size: 18px;
+            padding: 15px;
+            border-radius: 10px;
+            width: 400px;
+            height: 200px;
+            overflow: hidden;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+        }
+        
+        pre {
+            margin: 0;
+            white-space: pre-wrap;
+        } */
+
         .MyResume {
             margin-top: -50px;
             width: 80%;
@@ -243,12 +333,12 @@
             color: var(--text-color);
         }
 
-        .contentData:hover{
-            color: rgb(166, 88, 88);
+        .contentData:hover {
+            color:yellow ;
         }
 
         .contentData h2 {
-            color: rebeccapurple;
+            color:yellow;
             position: relative;
             bottom: 40px;
         }
@@ -317,7 +407,7 @@
             top: 75px;
             width: 150px;
             font-size: 14px;
-            color:  rgb(154, 119, 186);
+            color: rgb(154, 119, 186);
         }
 
         .vertical-desc {

@@ -27,7 +27,7 @@ buttons.forEach((button) => {
 
 const contentData = {
     Home: `<div class="contentData" id="homeData">
-            <h2>Welcome to My portfolio</h2>
+            <h2>Home</h2>
             <img src="images/myImg.jpg">
             <p>Hello,I'm Gaurav Singh.</p>
             <p>Front-End Developer & Tech Enthusiast.</p>
@@ -118,3 +118,43 @@ socialList.forEach((list) => {
     })
 })
 
+const typingElement = document.getElementById("typing-text");
+
+// Define HTML elements as strings
+const codeSnippets = [
+    "<h2>Hello, Welcome to my portfolio</h2>",
+    "<p class='codeText'>I am a <strong>Web Developer</strong>.</p>",
+    "<p class='codeText'>Let's build something amazing together!</p>",
+    "<img src=''>"
+];
+
+let index = 0;
+let charIndex = 0;
+let currentLine = "";
+
+function typeCode() {
+    if (index < codeSnippets.length) {
+        if (charIndex < codeSnippets[index].length) {
+            currentLine += codeSnippets[index][charIndex]; // Build the current line
+            typingElement.innerHTML = currentLine; // Update the displayed content as HTML
+            charIndex++;
+            setTimeout(typeCode, 40); // Speed of typing effect
+        } else {
+            currentLine += '<br>';
+            index++;
+            charIndex = 0;
+            setTimeout(typeCode,50)
+
+        }
+    } else {
+        setTimeout(() => {
+            typingElement.innerHTML = ""; // Clear text after completing all lines
+            index = 0;
+            charIndex = 0;
+            currentLine = "";
+            typeCode(); // Restart animation
+        }, 2000);
+    }
+}
+
+typeCode();
