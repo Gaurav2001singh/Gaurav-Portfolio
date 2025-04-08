@@ -18,6 +18,38 @@
 
         .light-mode {
             --bg-color: #ffffff;
+            background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20210324/pngtree-portfolio-memphis-playful-abstract-pink-image_593412.jpg");
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        .light-mode code h2{
+            opacity: 0;
+            animation: screenupp 1s ease-in forwards;
+        }
+
+        @keyframes screenupp {
+            0%{
+                opacity:1;
+                transform: scale(2.1);
+                color: red;
+            }
+            50%{
+                opacity: 1;
+                transform: scale(2);
+                color: black;
+
+            }
+            80%{
+                opacity: 1;
+                transform: scale(1.5);
+                color: white;  
+            }
+            100%{
+                opacity: 1;
+                transform: scale(1);
+                color: red;
+            }
         }
 
         .light-mode .codeText{
@@ -80,7 +112,7 @@
         }
 
         .light-mode .vertical-title {
-            color: rgb(118, 20, 209);
+            color: red;
         }
 
         .light-mode .vertical-desc {
@@ -333,15 +365,13 @@
             color: var(--text-color);
         }
 
-        .contentData:hover {
-            color:yellow ;
-        }
-
         .contentData h2 {
-            color:yellow;
+            color:#292951;
             position: relative;
             bottom: 40px;
         }
+
+        
 
         #HomeData p {
             font-family: "Bebas Neue";
@@ -407,7 +437,7 @@
             top: 75px;
             width: 150px;
             font-size: 14px;
-            color: rgb(154, 119, 186);
+            color: black;
         }
 
         .vertical-desc {
