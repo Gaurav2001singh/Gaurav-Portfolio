@@ -18,9 +18,8 @@
 
         .light-mode {
             --bg-color: #ffffff;
-            background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20210324/pngtree-portfolio-memphis-playful-abstract-pink-image_593412.jpg");
-            background-size: contain;
-            background-repeat: no-repeat;
+            /* background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20210324/pngtree-portfolio-memphis-playful-abstract-pink-image_593412.jpg"); */
+            /* background-size: contain; */
         }
 
         .light-mode code h2{
@@ -32,7 +31,7 @@
             0%{
                 opacity:1;
                 transform: scale(2.1);
-                color: red;
+                color: black;
             }
             50%{
                 opacity: 1;
@@ -43,12 +42,12 @@
             80%{
                 opacity: 1;
                 transform: scale(1.5);
-                color: white;  
+                color:rgb(118, 20, 209) ;  
             }
             100%{
                 opacity: 1;
                 transform: scale(1);
-                color: red;
+                color:rgb(118, 20, 209) ;
             }
         }
 
@@ -83,9 +82,6 @@
             color: rgb(142, 71, 209);
         }
 
-        .light-mode .contentData:hover {
-            color: rgb(128, 0, 255);
-        }
 
         .light-mode .leftSection {
             color: black;
@@ -371,7 +367,9 @@
             bottom: 40px;
         }
 
-        
+        .contentData a{
+            color: rgb(18, 172, 223);
+        }
 
         #HomeData p {
             font-family: "Bebas Neue";
@@ -472,6 +470,7 @@
         .footer-second img {
             width: 25px;
             margin: 10px 5px;
+            cursor: pointer;
         }
 
         .footer-fourth h4 {
