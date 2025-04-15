@@ -272,12 +272,12 @@
             0%{
                 opacity:1;
                 transform: scale(2.1);
-                color: yellow;
+                color: white;
             }
             50%{
                 opacity: 1;
                 transform: scale(2);
-                color: red;
+                color: white;
 
             }
             80%{
@@ -288,7 +288,7 @@
             100%{
                 opacity: 1;
                 transform: scale(1);
-                color: yellow;
+                color: rgb(118, 20, 209);
             }
         }
         
@@ -300,24 +300,6 @@
             color: red;
             text-transform: uppercase;
         }
-
-        /* .coding-animation {
-            background-color: #1e1e1e;
-            color: #00ff99;
-            font-family: "Courier New", monospace;
-            font-size: 18px;
-            padding: 15px;
-            border-radius: 10px;
-            width: 400px;
-            height: 200px;
-            overflow: hidden;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-        }
-        
-        pre {
-            margin: 0;
-            white-space: pre-wrap;
-        } */
 
         .MyResume {
             margin-top: -50px;

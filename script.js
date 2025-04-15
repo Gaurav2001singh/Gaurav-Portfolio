@@ -45,7 +45,6 @@ const contentData = {
         <mark>JAVASCRIPT</mark>
         </div>
         <hr>
-
         </div>
     `,
     Services: `<div class="contentData" id="Services">
