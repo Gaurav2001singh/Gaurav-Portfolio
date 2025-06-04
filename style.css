@@ -107,10 +107,6 @@
             background-color: black !important;
         }
 
-        .light-mode .vertical-title {
-            color: red;
-        }
-
         .light-mode .vertical-desc {
             color: black;
         }
@@ -199,7 +195,22 @@
             width: 60px;
             margin: 0 10px;
             border-radius: 10px;
-            box-shadow: 1px 1px 2px red;
+            box-shadow: 1px 1px 2px white;
+            animation: zoomOut 3s ease-in-out infinite;
+        }
+        @keyframes zoomOut {
+            0%{
+                transform: scale(0.9);
+            }
+            50%{
+                transform: scale(1);
+            }
+            75%{
+                transform: scale(1.5);
+            }
+            100%{
+                transform: scale(1);
+            }
         }
 
         .left img:hover {
@@ -288,7 +299,7 @@
             100%{
                 opacity: 1;
                 transform: scale(1);
-                color: rgb(118, 20, 209);
+                color: white;
             }
         }
         
@@ -299,6 +310,7 @@
         .codeText strong{
             color: red;
             text-transform: uppercase;
+            font-family: "Cal Sans", sans-serif;
         }
 
         .MyResume {
@@ -336,11 +348,18 @@
 
         .contentData img {
             width: 20%;
+            border-radius: 50%;
         }
 
         .contentData {
             letter-spacing: 3px;
             color: var(--text-color);
+        }
+        .contentData p:hover,
+        .contentData li:hover{
+            color: red;
+            transition:all ease-in-out 1s;
+            transform: scale(1.1);
         }
 
         .contentData h2 {
@@ -355,7 +374,7 @@
 
         #HomeData p {
             font-family: "Bebas Neue";
-            display: inline;
+            display: inline; 
         }
 
         #aboutData mark {
@@ -419,6 +438,12 @@
             font-size: 14px;
             color: black;
         }
+        .vertical-title:hover,
+        .vertical-desc:hover{
+            color: white;
+            transform: scale(1.5);
+            transition:all ease-in-out 1s;
+        }
 
         .vertical-desc {
             position: relative;
@@ -480,10 +505,13 @@
             border: 1px solid #ccc;
             border-radius: 5px;
             margin: 10px 10px;
+            background-color: black;
+            color: white;
+            font-size: 15px;
         }
 
         .newsletter button {
-            padding: 10px 15px;
+            padding: 13px 15px;
             background: #007bff;
             color: #fff;
             border: none;
